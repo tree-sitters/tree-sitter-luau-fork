@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tree-sitter generate && node-gyp build",
     "lint": "eslint grammar.js",
-    "test": "tree-sitter test && script/parse-examples",
+    "test": "tree-sitter test && script/parse-example",
     "parse": "tree-sitter parse",
     "test-windows": "tree-sitter test"
   },
