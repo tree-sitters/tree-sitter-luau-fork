@@ -1,7 +1,7 @@
 [package]
 name = "tree-sitter-luau-fork"
 description = "luau grammar for the tree-sitter parsing library (fork from tree-sitter-grammars/tree-sitter-luau-fork)"
-version = "0.1.1"
+version = "0.1.2"
 keywords = ["incremental", "parsing", "luau"]
 categories = ["parsing", "text-editors"]
 repository = "https://github.com/tree-sitters/tree-sitter-luau-fork"
