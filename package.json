@@ -13,11 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@muniftanjim/tree-sitter-lua": "^0.0.19",
     "nan": "^2.20.0"
   },
   "devDependencies": {
-    "@muniftanjim/tree-sitter-lua": "^0.0.19",
     "eslint": "^8.39.0",
+    "eslint-config-google": "^0.14.0",
     "node-gyp": "^10.2.0",
     "tree-sitter-cli": "^0.22.6"
   },
