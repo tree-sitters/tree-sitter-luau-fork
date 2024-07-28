@@ -6,6 +6,7 @@ keywords = ["incremental", "parsing", "luau"]
 categories = ["parsing", "text-editors"]
 repository = "https://github.com/tree-sitters/tree-sitter-luau-fork"
 edition = "2021"
+license = "MIT"
 
 build = "bindings/rust/build.rs"
 include = [
