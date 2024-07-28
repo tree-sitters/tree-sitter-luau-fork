@@ -1,5 +1,5 @@
-#ifndef TREE_SITTER_LUAU_H_
-#define TREE_SITTER_LUAU_H_
+#ifndef TREE_SITTER_LUAU_FORK_H_
+#define TREE_SITTER_LUAU_FORK_H_
 
 typedef struct TSLanguage TSLanguage;
 
@@ -7,10 +7,10 @@ typedef struct TSLanguage TSLanguage;
 extern "C" {
 #endif
 
-extern TSLanguage *tree_sitter_luau();
+extern TSLanguage *tree_sitter_luau_fork();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif // TREE_SITTER_LUAU_H_
+#endif // TREE_SITTER_LUAU_FORK_H_

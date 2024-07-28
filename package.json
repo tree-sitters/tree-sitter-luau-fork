@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-luau-fork",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "bindings/node",
   "scripts": {
@@ -11,7 +11,7 @@
     "test-windows": "tree-sitter test"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@muniftanjim/tree-sitter-lua": "^0.0.19",
     "nan": "^2.20.0"

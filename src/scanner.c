@@ -50,24 +50,24 @@ static inline void skip_whitespaces(TSLexer *lexer) {
     }
 }
 
-void *tree_sitter_luau_external_scanner_create() {
+void *tree_sitter_luau_fork_external_scanner_create() {
     Scanner *scanner = calloc(1, sizeof(Scanner));
     return scanner;
 }
 
-void tree_sitter_luau_external_scanner_destroy(void *payload) {
+void tree_sitter_luau_fork_external_scanner_destroy(void *payload) {
     Scanner *scanner = (Scanner *)payload;
     free(scanner);
 }
 
-unsigned tree_sitter_luau_external_scanner_serialize(void *payload, char *buffer) {
+unsigned tree_sitter_luau_fork_external_scanner_serialize(void *payload, char *buffer) {
     Scanner *scanner = (Scanner *)payload;
     buffer[0] = scanner->ending_char;
     buffer[1] = (char)scanner->level_count;
     return 2;
 }
 
-void tree_sitter_luau_external_scanner_deserialize(void *payload, const char *buffer, unsigned length) {
+void tree_sitter_luau_fork_external_scanner_deserialize(void *payload, const char *buffer, unsigned length) {
     Scanner *scanner = (Scanner *)payload;
     if (length == 0) {
         return;
@@ -206,7 +206,7 @@ static bool scan_string_content(Scanner *scanner, TSLexer *lexer) {
     return true;
 }
 
-bool tree_sitter_luau_external_scanner_scan(void *payload, TSLexer *lexer, const bool *valid_symbols) {
+bool tree_sitter_luau_fork_external_scanner_scan(void *payload, TSLexer *lexer, const bool *valid_symbols) {
     Scanner *scanner = (Scanner *)payload;
     if (valid_symbols[STRING_END] && scan_string_end(scanner, lexer)) {
         reset_state(scanner);
