@@ -1,6 +1,6 @@
-/test
-/examples
+Cargo.lock
+package-lock.json
 /build
-/script
-/target
 /node_modules
+/examples/*/
+/target
