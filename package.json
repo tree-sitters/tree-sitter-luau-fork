@@ -1,0 +1,33 @@
+{
+  "name": "tree-sitter-luau-fork",
+  "version": "0.1.0",
+  "description": "",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tree-sitter-grammars/tree-sitter-lua": "^0.1.0",
+    "nan": "^2.20.0"
+  },
+  "devDependencies": {
+    "@muniftanjim/tree-sitter-lua": "^0.0.19",
+    "eslint": "^9.6.0",
+    "node-gyp": "^10.2.0",
+    "tree-sitter-cli": "^0.22.6"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.luau",
+      "injection-regex": "^lua(u)?$",
+      "file-types": [
+        "luau"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ]
+}
